@@ -1,0 +1,16 @@
+{
+  "python": "3.8.13",
+  "numpy": "1.23.4",
+  "torch": "1.12.1+cu102",
+  "scikit-learn": "1.0",
+  "einops": "0.6.0",
+  "verification_device": "cpu",
+  "verification_data": "synthetic",
+  "contrastive_gradient": "enabled",
+  "unit_tests_passed": 16,
+  "unit_tests_skipped": 0,
+  "synthetic_end_to_end_passed": true,
+  "convlstm_eval_equivalence_after_key_mapping_passed": true,
+  "convlstm_eval_max_abs_embedding_difference": 1.4901161193847656e-08,
+  "convlstm_eval_equivalence_tolerance": 1e-06
+}

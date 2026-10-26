@@ -1,0 +1,19 @@
+{
+  "datasets": ["uci", "hhar", "motion", "shl"],
+  "features_shape": ["samples", "time", "channels"],
+  "labels_shapes": [
+    ["samples"],
+    ["samples", "fields"],
+    ["samples", "time", "fields"]
+  ],
+  "label_index": "Explicitly required for multidimensional labels",
+  "metadata": "Separate npy arrays, or an explicit original-label field index",
+  "normalization": "Explicitly choose raw_imu or none",
+  "splits": "Supply separate train, val, test npy files; no automatic paper split is asserted",
+  "model_selection": "Training labels define classes; validation F1 selects epoch; test evaluated once",
+  "implementation": "corrected",
+  "contrastive_gradient_default": "enabled",
+  "contrastive_reduction": "Half the mean margin loss over all unordered non-self sample pairs",
+  "contrastive_equation_N": "The number of selected pairs, P = batch_size * (batch_size - 1) / 2",
+  "paper_hyperparameters_verified": false
+}

@@ -1,0 +1,6 @@
+# Tested with Python 3.8 and the versions recorded in the release verification.
+# These are compatibility ranges, not a recovered historical lockfile.
+numpy>=1.23,<2
+torch>=1.12
+scikit-learn>=1.0
+einops>=0.3
